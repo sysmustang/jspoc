@@ -19,6 +19,7 @@ function showOffer(){
     imageWidth: 200,
     imageHeight: 200,
     showCancelButton: true,
+    showConfirmButton: true,
     confirmButtonText: 'View'
   }).then((result) => {
   	if (result.isConfirmed) 
