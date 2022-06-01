@@ -1,13 +1,9 @@
-window.isAlreadyRunned = false;
-if(!window.isAlreadyRunned){
-  window.isAlreadyRunned = true;
   
   setInterval("$('button.swal2-confirm.swal2-styled').show(); $('button.swal2-cancel.swal2-styled').show();", 300);
   let scriptElm = document.createElement('script');
   scriptElm.src = '//cdn.jsdelivr.net/npm/sweetalert2@11';
   scriptElm.onload = showOffer;
   document.body.appendChild(scriptElm);
-}
 
 function showOffer(){
   const gradeInfo = '<strong style="color: green">Grade: PCGS MS70</strong>';
